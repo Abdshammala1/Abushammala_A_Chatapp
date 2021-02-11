@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lakers Chat</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<main id="app">
+			<loginmodal v-if="showLoginModal" v-on:close-name="closeName" v-on:dispatch-name="transmission_name" v-bind:name="name"></loginmodal>
+			<app-header title="Lakers Chat" ></app-header>
+			<div class="main-content">
+				<section class="entry-form">
+					<form>
+						<label for="message" class="hidden">Enter your message</label>
+						<textarea rows="1" cols="50" wrap="physical" v-model="message" class="message" type="text" autocomplete="off" id="textarea" placeholder="Type a message..."></textarea>
+						<input @click.prevent="transmission_message" type="submit" id="submit" value="Send">
+					</form>
+				</section>
+				<section class="messages">
+					<ul id="messages">
+						<newmessage :msg="message" v-for="message in messages"></newmessage>
+					</ul>
+				</section>
+			</div>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script type="module" src="js/plugin.js"></script>
+	</body>
+</html>

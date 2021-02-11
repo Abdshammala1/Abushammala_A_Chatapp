@@ -1,0 +1,23 @@
+.new-message { 
+    span { 
+        display: block; 
+        margin-bottom: 2px; 
+    }
+
+    width: 45%;
+    padding: 8px 12px;
+    background-color: $bgBoard; 
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    color: #515b71;
+    float:left;
+    clear: both;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+}
+
+.my-message {
+    float: right !important;
+    background-color: #1a233b;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+}

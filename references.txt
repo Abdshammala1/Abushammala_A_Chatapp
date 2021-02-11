@@ -1,0 +1,8 @@
+knowledge of Node.JS or Socket.IO:
+https://socket.io/get-started/chat
+
+Getting Started on Heroku with Node.js:
+https://devcenter.heroku.com/articles/getting-started-with-nodejs
+
+Deploy and run your Node apps:
+https://www.heroku.com/nodejs

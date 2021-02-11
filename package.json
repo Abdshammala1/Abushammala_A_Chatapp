@@ -1,0 +1,21 @@
+{
+  "name": "lakers-chat",
+  "version": "1.0.0",
+  "description": "Lakers Chat ",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "sass": "node-sass --include-path scss sass/main.scss public/css/main.css --output-style expanded && node-sass --include-path scss sass/main.scss public/css/main.min.css --output-style compressed && autoprefixer-cli -o public/css/main.css public/css/main.css && autoprefixer-cli -o public/css/main.min.css public/css/main.min.css"
+  },
+  "author": "AA",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^2.0.7",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "node-sass": "^5.0.0"
+  }
+}
