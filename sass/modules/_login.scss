@@ -1,0 +1,56 @@
+.name-form {
+    padding: 30px 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    span {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        font-family: $font-heading;
+        font-size: 1.5em;
+        color: $light2;
+    }
+    label {
+        color: $color-purple;
+        font-size: 1.2em;
+    }
+    
+    input {
+        border: $color-gray solid 1px;
+    }
+
+    input {
+        background-color: $bgInput;
+        width: 60%;
+        padding: 12px 16px;
+        border-radius: 8px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+
+}
+
+#name-submit {
+    background-color: $color-yellow;
+    color: $color-purple;
+    font-family: $font-heading;
+    transition: all ease .5s;
+    cursor: pointer;
+    border: none;
+    padding: 8px 8px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#name-submit:hover {
+	background-color: $color-yellow2;
+	border: none;
+}
+
+.hide-form {
+    display: none;
+}

@@ -1,0 +1,123 @@
+@import '_vars.scss';
+
+/* reset */
+* {
+	margin: 0; padding: 0; box-sizing: border-box; border: none; list-style: none;
+}
+
+html, body { height: 100%; }
+
+body { 
+	background-color: $dark1;
+	font-family: $font;
+	color: $light1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main { 
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+    border-radius: 10px;
+    box-shadow: 
+        0px 11px 15px -7px rgba(0, 0, 0, 0.2), 
+        0px 24px 38px 3px rgba(0, 0, 0, 0.14), 
+        0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+	transition: all 0.3s ease;
+	overflow: hidden;
+	background-color: $bgBoard;
+}
+
+.main-content { 
+	margin: 20px;
+    background-color: #f3f6fb;
+    border-radius: 16px;
+	overflow: hidden;	
+    position: relative;
+}
+
+a {
+	color: $dark2;
+	text-decoration: none;
+	transition: all .5s ease;
+}
+
+.hidden {
+	display: none;
+}
+
+.entry-form {
+	order: 2;
+	padding: 16px 20px;
+	margin: 16px;
+	display: flex;
+	flex-direction: column;
+	background-color: $bgModal;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+	transition: all 0.3s ease;
+
+	position: absolute;
+    bottom: 16px;
+    left: 0px;
+	right: 0px;
+	
+	form {
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+
+
+#textarea {
+	width: 80%;
+	padding:12px 16px;
+	border-radius: 10px;
+	background-color: $bgInput;
+	border: $color-gray solid 1px;
+	font-size: 1.4em;
+	max-width: 900px;
+}
+
+::placeholder {
+	color: $color-gray2;
+	font-size: 1.0em;
+	font-family: $font;
+}
+
+#submit {
+	background-color: $color-yellow;
+	border: solid 1px $color-yellow;
+	width: 20%;
+	max-width: 400px;
+	margin-left: 10px;
+	border-radius: 10px;
+	font-size: 1.2em;
+	font-family: $font-heading;
+	color: $color-purple;
+	font-weight: bold;
+	transition: all ease .5s;
+	cursor: pointer;
+	transition: all ease .5s;
+}
+
+#submit:hover {
+	background-color: $color-yellow2;
+	border: none;
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	height: 67vh;
+	padding: 20px;
+	overflow-y: auto;
+	margin-bottom: 120px;
+}
+
+@import 'modules/_modal';
+@import 'modules/_login';
+@import 'modules/_header';
+@import 'modules/_message';

@@ -1,10 +1,9 @@
-# Abushammala_A_Chatapp
-Basic Chat app for learning purposes
-
-
+## Lakers Chat App:
 
 - Express.js
 - Socket.io
 - Vue.js
 - SASS/CSS3
 - HTML5
+
+ 
